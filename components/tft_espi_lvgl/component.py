@@ -3,7 +3,7 @@ from esphome import automation
 from esphome.const import CONF_ID
 
 tft_ns = cg.global_ns.namespace('')  # Global namespace
-TFTeSPIComponent = tft_ns.class_('TFT_eSPI_LVGL', cg.Component)
+TFTeSPIComponent = tft_ns.class_('tft_espi_lvgl', cg.Component)
 
 CONFIG_SCHEMA = cg.Schema({
     cg.GenerateID(): cg.declare_id(TFTeSPIComponent),
