@@ -3,7 +3,7 @@ import esphome.config_validation as cv
 from esphome.const import CONF_ID
 
 
-tft_ns = cg.esphome_ns.namespace('tft_espi_lvgl')
+tft_ns = cg.global_ns.namespace('tft_espi_lvgl')
 TFTeSPIComponent = tft_ns.class_('TFTeSPIComponent', cg.Component)
 
 CONFIG_SCHEMA = cv.Schema({
