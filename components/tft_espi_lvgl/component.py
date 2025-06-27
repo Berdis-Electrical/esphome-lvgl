@@ -1,11 +1,9 @@
 import esphome.codegen as cg
 import esphome.config_validation as cv
-from esphome import automation
 from esphome.const import CONF_ID
 
-CODEOWNERS = ["@yourgithubusername"]  # optional
 
-tft_ns = cg.esphome_ns.namespace('tft_espi_lvgl')  # Global namespace
+tft_ns = cg.esphome_ns.namespace('tft_espi_lvgl')
 TFTeSPIComponent = tft_ns.class_('TFTeSPIComponent', cg.Component)
 
 CONFIG_SCHEMA = cv.Schema({
